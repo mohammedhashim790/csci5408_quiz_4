@@ -8,33 +8,36 @@ public class Task {
 
     private TaskStatus taskStatus;
 
-    private long expiryDate;
+    private long dueDate;
 
 
-    public Task(String taskName, long expiryDate) {
+    public Task(String taskName, long dueDate) {
         this.taskName = taskName;
     }
 
-    public Task(String taskName, TaskStatus taskStatus, long expiryDate) {
+    public Task(String taskName, TaskStatus taskStatus, long dueDate) {
         this.taskName = taskName;
         this.taskStatus = taskStatus;
     }
 
-    public Task(String taskName, Member member, TaskStatus taskStatus, long expiryDate) {
+    public Task(String taskName, Member member, TaskStatus taskStatus, long dueDate) {
         this.taskName = taskName;
         this.member = member;
         this.taskStatus = taskStatus;
     }
 
-    public void assignTo(Member member) {
-
+    public Member assignTo(Member member) {
+        return null;
     }
 
-    public void updateStatus(TaskStatus taskStatus) {
+    public TaskStatus updateStatus(TaskStatus taskStatus) {
+        return null;
     }
 
 
-    public void isOverdue() {
+    public boolean isOverdue() {
+
+        return false;
     }
 
 
